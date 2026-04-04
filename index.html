@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jacob Digital – Websites, Automatisierung &amp; AI-Lösungen</title>
+  <meta name="description" content="Jacob Digital unterstützt Unternehmen mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen – strukturiert, umsetzungsstark und nachhaltig." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jacob Digital – Websites, Automatisierung &amp; AI-Lösungen" />
+  <meta property="og:description" content="Jacob Digital unterstützt Unternehmen mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen – strukturiert, umsetzungsstark und nachhaltig." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jacobdigital.de" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="Brand/Favicon.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo" aria-label="Jacob Digital – Startseite">
+          <img src="Brand/Logo-transparent.png" alt="Jacob Digital" />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav--desktop" aria-label="Hauptnavigation">
+          <ul class="nav__list">
+            <li><a href="#leistungen" class="nav__link">Leistungen</a></li>
+            <li><a href="#vorgehen" class="nav__link">Vorgehen</a></li>
+            <li><a href="#ueber-mich" class="nav__link">Über mich</a></li>
+            <li><a href="#projekte" class="nav__link">Projekte</a></li>
+            <li><a href="#kontakt" class="nav__cta">Kontakt aufnehmen</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger -->
+        <button class="hamburger" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="nav--mobile" id="mobile-nav" aria-label="Mobile Navigation">
+      <ul class="nav__list">
+        <li><a href="#leistungen" class="nav__link">Leistungen</a></li>
+        <li><a href="#vorgehen" class="nav__link">Vorgehen</a></li>
+        <li><a href="#ueber-mich" class="nav__link">Über mich</a></li>
+        <li><a href="#projekte" class="nav__link">Projekte</a></li>
+        <li><a href="#kontakt" class="nav__cta">Kontakt aufnehmen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero">
+    <canvas class="hero__canvas" id="hero-shader" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="hero__inner">
+        <span class="hero__eyebrow">Jacob Digital · Full Circle Care</span>
+        <h1 class="hero__title">
+          Operative Probleme lösen&nbsp;– mit <em>Automatisierung</em> und AI.
+        </h1>
+        <p class="hero__text">
+          Ich analysiere, wo in Ihrem Unternehmen die größten Reibungsverluste entstehen, und löse sie mit konkreten digitalen Maßnahmen. Keine Folienberater-Ansätze – ich setze um und bleibe dabei.
+        </p>
+        <div class="hero__actions">
+          <a href="#kontakt" class="btn btn--primary">Kontakt aufnehmen</a>
+          <a href="#leistungen" class="btn btn--text">Leistungen ansehen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LEISTUNGEN
+  ============================================================ -->
+  <section class="section section--alt" id="leistungen">
+    <div class="container">
+      <p class="section__label">Was ich anbiete</p>
+      <h2 class="section__title">Leistungen</h2>
+      <p class="section__intro">Drei Bereiche, in denen ich konkrete Ergebnisse liefere – einzeln oder kombiniert, je nach Ihrem Bedarf.</p>
+
+      <div class="leistungen__grid">
+
+        <!-- Card 1: Website -->
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="4" y="8" width="32" height="24" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M4 14h32" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="9" cy="11" r="1.5" fill="currentColor"/>
+            <circle cx="14" cy="11" r="1.5" fill="currentColor"/>
+            <path d="M12 22h16M12 26h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <h3 class="card__title">Website-Erstellung</h3>
+          <p class="card__text">Klare, schnelle Websites, die Ihr Angebot verständlich kommunizieren und technisch sauber funktionieren. Kein generisches Template, sondern ein strukturierter Auftritt, der zu Ihrem Unternehmen passt.</p>
+          <div class="card__example">
+            <strong>Beispiel</strong>
+            Ein Handwerksbetrieb benötigt eine professionelle Webpräsenz mit Kontaktformular und Leistungsübersicht – fertig in wenigen Tagen, ohne monatelange Agenturprojekte.
+          </div>
+        </div>
+
+        <!-- Card 2: Automatisierung -->
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8 20a12 12 0 1 1 24 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M20 8v4M32 20h-4M14.1 12.1l2.8 2.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M20 23v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M16 32h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <h3 class="card__title">Automatisierung</h3>
+          <p class="card__text">Manuelle, wiederholende Abläufe binden Zeit und verursachen Fehler. Ich identifiziere, welche Prozesse sich automatisieren lassen, und setze das mit geeigneten Tools wie n8n und API-Integrationen um.</p>
+          <div class="card__example">
+            <strong>Beispiel</strong>
+            Ein Dienstleister leitet eingehende Anfragen manuell weiter und pflegt Daten in mehreren Systemen. Danach läuft das vollautomatisch – mit Benachrichtigungen, Logging und Fehlerbehandlung.
+          </div>
+        </div>
+
+        <!-- Card 3: AI -->
+        <div class="card">
+          <svg class="card__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="12" y="6" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="17" cy="13" r="1.5" fill="currentColor"/>
+            <circle cx="23" cy="13" r="1.5" fill="currentColor"/>
+            <path d="M17 17h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M20 22v4M12 34h4l4-4 4 4h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3 class="card__title">AI-gestützte Lösungen</h3>
+          <p class="card__text">AI dort einsetzen, wo sie konkreten Nutzen stiftet: Texte strukturieren, Anfragen klassifizieren, interne Wissensdatenbanken durchsuchen. Kein Selbstzweck, sondern gezielte Anwendung auf reale Probleme.</p>
+          <div class="card__example">
+            <strong>Beispiel</strong>
+            Ein Unternehmen erhält täglich viele Support-Anfragen. Ein AI-Agent klassifiziert und priorisiert diese automatisch und gibt dem Team einen strukturierten Überblick zur Bearbeitung.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       VORGEHEN
+  ============================================================ -->
+  <section class="section" id="vorgehen">
+    <div class="container">
+      <p class="section__label">Wie ich arbeite</p>
+      <h2 class="section__title">Vorgehen</h2>
+      <p class="section__intro">Vier Phasen, die sich in der Praxis bewährt haben. Kein starres Prozessmodell, aber eine klare Struktur, die Unsicherheit reduziert.</p>
+
+      <div class="vorgehen__steps">
+
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3 class="step__title">Verstehen</h3>
+          <p class="step__text">Ich höre zu, frage nach und lese zwischen den Zeilen. Was ist das eigentliche Problem – nicht nur das, was auf den ersten Blick sichtbar ist?</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3 class="step__title">Konzipieren</h3>
+          <p class="step__text">Bevor Code geschrieben oder Workflows gebaut werden, gibt es einen klaren Plan. Was wird gebaut, warum, und was bleibt bewusst draußen?</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3 class="step__title">Umsetzen</h3>
+          <p class="step__text">Ich baue sauber, nachvollziehbar und ohne unnötige Komplexität. Was geliefert wird, soll langfristig funktionieren – nicht nur zum Launch.</p>
+        </div>
+
+        <div class="step">
+          <div class="step__number">4</div>
+          <h3 class="step__title">Verbessern</h3>
+          <p class="step__text">Nach dem Launch beginnt die eigentliche Arbeit. Ich bleibe verfügbar, beobachte wie die Lösung in der Praxis performt, und passe an wo nötig.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ÜBER MICH
+  ============================================================ -->
+  <section class="section section--alt" id="ueber-mich">
+    <div class="container">
+      <div class="ueber__grid">
+        <div class="ueber__image-wrap">
+          <img class="ueber__image" src="Peter.jpg" alt="Peter Jacob – Jacob Digital" />
+        </div>
+        <div class="ueber__text">
+          <p class="section__label">Wer ich bin</p>
+          <h2>Peter Jacob</h2>
+          <p>Ich arbeite an der Schnittstelle von Produkt, Prozess und Technologie. Mein Hintergrund liegt im Produktmanagement und in der digitalen Transformation – beides hilft mir, schnell zu verstehen, wie ein Unternehmen wirklich funktioniert und wo die Stellschrauben sind.</p>
+          <p>Ich glaube nicht daran, Lösungen zu verkaufen, die erst in einem Jahr Wirkung zeigen. Mein Fokus liegt auf dem, was <strong>jetzt</strong> umsetzbar ist und sofort einen Unterschied macht – ohne dabei die Weiterentwicklung aus dem Blick zu verlieren.</p>
+          <p>Mit Jacob Digital arbeite ich bewusst schlank und direkt. Kein großes Agentur-Setup, keine überdimensionierten Projekte. Stattdessen: klare Absprachen, ehrliche Einschätzungen und Ergebnisse, die sich messen lassen.</p>
+          <p>Wenn Sie ein konkretes Problem haben und jemanden suchen, der mitdenkt und umsetzt – dann sprechen Sie mich an.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJEKTE
+  ============================================================ -->
+  <section class="section" id="projekte">
+    <div class="container">
+      <p class="section__label">Aus der Praxis</p>
+      <h2 class="section__title">Beispiel-Szenarien</h2>
+      <p class="section__intro">Die folgenden Beispiele illustrieren typische Ausgangssituationen und mögliche Lösungsansätze. Sie basieren auf realen Problemstellungen, sind jedoch keine konkreten Referenzprojekte.</p>
+
+      <div class="projekte__grid">
+
+        <!-- Projekt 1 -->
+        <div class="projekt-card">
+          <span class="projekt-card__badge">Automatisierung</span>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Situation</p>
+            <p class="projekt-card__value">Ein Beratungsunternehmen verwaltet Kundenanfragen, Aufgaben und Statusupdates über E-Mail und manuelle Tabellen. Die Übergaben zwischen Teammitgliedern sind fehleranfällig und zeitaufwändig.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Lösung</p>
+            <p class="projekt-card__value">Eingehende Anfragen werden automatisch erfasst, kategorisiert und dem zuständigen Bearbeiter zugeordnet. Statusänderungen lösen automatische Benachrichtigungen aus.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Ergebnis</p>
+            <p class="projekt-card__value">Das Team hat jederzeit einen klaren Überblick. Anfragen gehen nicht mehr verloren, und manuelle Koordination reduziert sich auf Ausnahmen.</p>
+          </div>
+        </div>
+
+        <!-- Projekt 2 -->
+        <div class="projekt-card">
+          <span class="projekt-card__badge">Website</span>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Situation</p>
+            <p class="projekt-card__value">Ein inhabergeführtes Dienstleistungsunternehmen hat keine eigene Webpräsenz. Neukunden können das Angebot online nicht finden oder einschätzen, ob das Unternehmen zu ihnen passt.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Lösung</p>
+            <p class="projekt-card__value">Eine klare, schnelle Website mit Leistungsübersicht, Referenzprojekten und direktem Kontaktweg. Keine unnötige Komplexität, aber vollständig und professionell.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Ergebnis</p>
+            <p class="projekt-card__value">Potenzielle Kunden können sich vorab informieren und qualifizieren sich bereits vor dem ersten Gespräch. Der Inhaber spart Zeit im Erstgespräch.</p>
+          </div>
+        </div>
+
+        <!-- Projekt 3 -->
+        <div class="projekt-card">
+          <span class="projekt-card__badge">AI-Lösung</span>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Situation</p>
+            <p class="projekt-card__value">Ein kleines Unternehmen erhält täglich viele ähnliche Fragen per E-Mail. Die Beantwortung bindet mehrere Stunden pro Woche, obwohl die Antworten oft identisch sind.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Lösung</p>
+            <p class="projekt-card__value">Ein AI-gestützter Assistent erkennt häufige Fragetypen, generiert passende Antwortentwürfe und legt diese zur finalen Freigabe vor. Neue oder komplexe Anfragen werden direkt weitergeleitet.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="projekt-card__block">
+            <p class="projekt-card__label">Ergebnis</p>
+            <p class="projekt-card__value">Standardanfragen werden schneller bearbeitet. Das Team kann sich auf Anfragen konzentrieren, die wirklich eine menschliche Einschätzung brauchen.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       KONTAKT
+  ============================================================ -->
+  <section class="section section--alt" id="kontakt">
+    <div class="container">
+      <div class="kontakt__inner">
+
+        <div class="kontakt__left">
+          <p class="section__label">Jetzt melden</p>
+          <h2>Lassen Sie uns sprechen.</h2>
+          <p>Wenn Sie ein konkretes Problem haben oder einfach herausfinden möchten, ob und wie ich helfen kann – schreiben Sie mir. Ich antworte persönlich und in der Regel innerhalb von 24 Stunden.</p>
+          <a href="mailto:peter@jacobdigital.de" class="kontakt__email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m2 7 10 7 10-7"/>
+            </svg>
+            peter@jacobdigital.de
+          </a>
+        </div>
+
+        <div class="kontakt__right">
+          <form class="form" novalidate>
+            <div class="form__group">
+              <label class="form__label" for="name">Name</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Ihr Name" autocomplete="name" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="email">E-Mail-Adresse</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="ihre@email.de" autocomplete="email" required />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="message">Nachricht</label>
+              <textarea class="form__textarea" id="message" name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen…" required></textarea>
+            </div>
+            <p class="form__note">Ihre Daten werden ausschließlich zur Beantwortung Ihrer Anfrage genutzt und nicht an Dritte weitergegeben. Es erfolgt keine Speicherung oder Weitergabe an externe Dienste.</p>
+            <button type="submit" class="form__submit">Nachricht senden</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="Brand/Logo-transparent.png" alt="Jacob Digital" />
+          </div>
+          <p>
+            <a href="mailto:peter@jacobdigital.de">peter@jacobdigital.de</a><br />
+            jacobdigital.de
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Jacob Digital – Peter Jacob</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
