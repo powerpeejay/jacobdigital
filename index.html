@@ -303,7 +303,9 @@
         </div>
 
         <div class="kontakt__right">
-          <form class="form" novalidate>
+          <form class="form" action="https://formspree.io/f/mgoppydg" method="POST" id="kontakt-form">
+            <input type="hidden" name="_language" value="de" />
+            <input type="hidden" name="_subject" value="Neue Kontaktanfrage – Jacob Digital" />
             <div class="form__group">
               <label class="form__label" for="name">Name</label>
               <input class="form__input" type="text" id="name" name="name" placeholder="Ihr Name" autocomplete="name" required />
@@ -316,8 +318,9 @@
               <label class="form__label" for="message">Nachricht</label>
               <textarea class="form__textarea" id="message" name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen…" required></textarea>
             </div>
-            <p class="form__note">Ihre Daten werden ausschließlich zur Beantwortung Ihrer Anfrage genutzt und nicht an Dritte weitergegeben. Es erfolgt keine Speicherung oder Weitergabe an externe Dienste.</p>
+            <p class="form__note">Ihre Daten werden ausschließlich zur Beantwortung Ihrer Anfrage genutzt und nicht an Dritte weitergegeben.</p>
             <button type="submit" class="form__submit">Nachricht senden</button>
+            <p class="form__success" id="form-success" style="display:none; color:#1586FC; font-size:0.9375rem; margin-top:0.75rem;">Danke – Ihre Nachricht wurde gesendet. Ich melde mich bald.</p>
           </form>
         </div>
 

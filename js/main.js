@@ -25,18 +25,42 @@
     });
   }
 
-  /* --- Contact Form ---------------------------------------- */
-  const form = document.querySelector('.form');
+  /* --- Contact Form (Formspree AJAX) ----------------------- */
+  const form = document.getElementById('kontakt-form');
   if (form) {
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
+
       const name    = form.querySelector('[name="name"]').value.trim();
       const email   = form.querySelector('[name="email"]').value.trim();
       const message = form.querySelector('[name="message"]').value.trim();
       if (!name || !email || !message) return;
-      const subject = encodeURIComponent('Kontaktanfrage von ' + name);
-      const body    = encodeURIComponent('Name: ' + name + '\nE-Mail: ' + email + '\n\n' + message);
-      window.location.href = 'mailto:peter@jacobdigital.de?subject=' + subject + '&body=' + body;
+
+      const btn = form.querySelector('.form__submit');
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet…';
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form),
+        });
+
+        if (res.ok) {
+          form.reset();
+          btn.style.display = 'none';
+          document.getElementById('form-success').style.display = 'block';
+        } else {
+          btn.disabled = false;
+          btn.textContent = 'Nachricht senden';
+          alert('Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an peter@jacobdigital.de');
+        }
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = 'Nachricht senden';
+        alert('Keine Verbindung. Bitte versuchen Sie es erneut.');
+      }
     });
   }
 
