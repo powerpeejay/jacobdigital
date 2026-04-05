@@ -147,10 +147,10 @@
         space.y += random(space.x * warpFrequency + iTime * warpSpeed)        * warpAmplitude * (0.5 + hFade);
         space.x += random(space.y * warpFrequency + iTime * warpSpeed + 2.0)  * warpAmplitude * hFade;
 
-        /* Near-white background with very subtle blue tint */
-        /* Left: rgb(248,250,255) · Right: rgb(242,246,255)          */
-        vec4 bgColor1 = vec4(0.973, 0.980, 1.000, 1.0);
-        vec4 bgColor2 = vec4(0.950, 0.965, 1.000, 1.0);
+        /* Light blue background derived from brand Electric Blue #1586FC */
+        /* Left: rgb(224,238,255) · Right: rgb(216,234,255)               */
+        vec4 bgColor1 = vec4(0.878, 0.933, 1.000, 1.0);
+        vec4 bgColor2 = vec4(0.847, 0.918, 1.000, 1.0);
 
         vec4 lines = vec4(0.0);
 
