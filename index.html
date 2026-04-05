@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Digital – Websites, Automatisierung &amp; AI-Lösungen</title>
-  <meta name="description" content="Jacob Digital unterstützt Unternehmen mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen – strukturiert, umsetzungsstark und nachhaltig." />
+  <title>Jacob Digital Hamburg – Websites, Automatisierung &amp; AI-Lösungen für KMU</title>
+  <meta name="description" content="Jacob Digital aus Hamburg hilft KMU und Mittelstand mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen – Analyse, Umsetzung und Begleitung aus einer Hand." />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://jacobdigital.de" />
@@ -14,9 +14,9 @@
   <meta property="og:description" content="Jacob Digital unterstützt Unternehmen mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen – strukturiert, umsetzungsstark und nachhaltig." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jacobdigital.de" />
-  <meta property="og:image" content="https://jacobdigital.de/Brand/BrandGuidelines_final.png" />
-  <meta property="og:image:width" content="1280" />
-  <meta property="og:image:height" content="850" />
+  <meta property="og:image" content="https://jacobdigital.de/Brand/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_DE" />
   <meta property="og:site_name" content="Jacob Digital" />
 
@@ -26,26 +26,38 @@
   <meta name="twitter:creator" content="@powerpeejay" />
   <meta name="twitter:title" content="Jacob Digital – Websites, Automatisierung &amp; AI-Lösungen" />
   <meta name="twitter:description" content="Jacob Digital unterstützt Unternehmen mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen – strukturiert, umsetzungsstark und nachhaltig." />
-  <meta name="twitter:image" content="https://jacobdigital.de/Brand/BrandGuidelines_final.png" />
+  <meta name="twitter:image" content="https://jacobdigital.de/Brand/og-image.jpg" />
 
-  <!-- Favicon -->
+  <!-- Favicon & Touch Icon -->
   <link rel="icon" type="image/png" href="Brand/Favicon.png" />
+  <link rel="apple-touch-icon" href="Brand/Favicon.png" />
 
-  <!-- JSON-LD Structured Data -->
+  <!-- Font Preload -->
+  <link rel="preload" href="fonts/Outfit-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- JSON-LD: LocalBusiness + ProfessionalService -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["LocalBusiness", "ProfessionalService"],
     "name": "Jacob Digital",
-    "description": "Jacob Digital unterstützt Unternehmen mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen.",
+    "description": "Jacob Digital aus Hamburg hilft KMU und Mittelstand mit maßgeschneiderten Websites, Prozessautomatisierung und AI-Lösungen – Analyse, Umsetzung und Begleitung aus einer Hand.",
     "url": "https://jacobdigital.de",
     "email": "peter@jacobdigital.de",
+    "image": "https://jacobdigital.de/Brand/Logo-transparent.png",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Lofotenstr. 20b",
       "postalCode": "22145",
       "addressLocality": "Hamburg",
+      "addressRegion": "Hamburg",
       "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 53.5753,
+      "longitude": 10.1017
     },
     "founder": {
       "@type": "Person",
@@ -53,15 +65,165 @@
       "jobTitle": "Gründer & Berater",
       "email": "peter@jacobdigital.de"
     },
-    "areaServed": {
-      "@type": "Country",
-      "name": "Deutschland"
+    "areaServed": [
+      { "@type": "City", "name": "Hamburg" },
+      { "@type": "Country", "name": "Deutschland" }
+    ],
+    "knowsAbout": [
+      "Prozessautomatisierung",
+      "AI-Agenten",
+      "n8n Automatisierung",
+      "Website-Erstellung",
+      "Digitale Transformation",
+      "KMU Digitalisierung",
+      "Mittelstand Digitalisierung",
+      "API-Integration",
+      "Workflow-Automatisierung"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Digitale Dienstleistungen",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Website-Erstellung",
+            "description": "Klare, schnelle Websites die Ihr Angebot verständlich kommunizieren – kein generisches Template, sondern ein strukturierter Auftritt der zu Ihrem Unternehmen passt."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Prozessautomatisierung",
+            "description": "Automatisierung manueller, wiederholender Abläufe mit n8n und API-Integrationen – weniger Fehler, mehr Zeit für das Wesentliche."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI-gestützte Lösungen",
+            "description": "Gezielte AI-Anwendungen für KMU: Texte strukturieren, Anfragen klassifizieren, interne Wissensdatenbanken durchsuchen – konkreter Nutzen statt Selbstzweck."
+          }
+        }
+      ]
     },
-    "serviceType": ["Website-Erstellung", "Prozessautomatisierung", "AI-Lösungen"],
     "sameAs": [
       "https://x.com/powerpeejay",
       "https://de.linkedin.com/in/peterjacob"
     ]
+  }
+  </script>
+
+  <!-- JSON-LD: Person — Peter Jacob -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Peter Jacob",
+    "jobTitle": "Gründer & Berater",
+    "url": "https://jacobdigital.de",
+    "email": "peter@jacobdigital.de",
+    "image": "https://jacobdigital.de/Peter.jpg",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Jacob Digital",
+      "url": "https://jacobdigital.de"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hamburg",
+      "addressCountry": "DE"
+    },
+    "knowsAbout": [
+      "Prozessautomatisierung",
+      "Digitale Transformation",
+      "Produktmanagement",
+      "AI-Agenten",
+      "n8n",
+      "API-Integration",
+      "KMU-Beratung",
+      "Website-Erstellung",
+      "Workflow-Automatisierung"
+    ],
+    "sameAs": [
+      "https://x.com/powerpeejay",
+      "https://de.linkedin.com/in/peterjacob"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ — GEO/LLM Optimierung -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was macht Jacob Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jacob Digital ist ein digitaler Dienstleister aus Hamburg, der KMU und Mittelstand bei der Digitalisierung unterstützt. Das Angebot umfasst Website-Erstellung, Prozessautomatisierung mit Tools wie n8n und AI-gestützte Lösungen – von der Analyse bis zur Umsetzung und Begleitung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Für wen ist Jacob Digital geeignet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jacob Digital arbeitet mit kleinen und mittelständischen Unternehmen (KMU), die konkrete operative Probleme lösen wollen – ohne monatelange Agenturprojekte oder reine Strategieberatung ohne Umsetzung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Automatisierungstools setzt Jacob Digital ein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jacob Digital arbeitet unter anderem mit n8n, API-Integrationen und AI-Agenten, um manuelle Prozesse zu automatisieren. Die Toolwahl richtet sich immer nach dem konkreten Bedarf des Unternehmens."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie läuft ein Projekt mit Jacob Digital ab?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein Projekt bei Jacob Digital läuft in vier Phasen ab: Verstehen (Problemanalyse), Konzipieren (klarer Plan), Umsetzen (Entwicklung) und Verbessern (Support nach Launch). Kein starres Modell – aber eine klare Struktur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist Jacob Digital in Hamburg ansässig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, Jacob Digital hat seinen Sitz in Hamburg (Lofotenstr. 20b, 22145 Hamburg). Projekte werden deutschlandweit umgesetzt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet eine Zusammenarbeit mit Jacob Digital?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Kosten variieren je nach Projekt und Umfang. Jacob Digital bietet eine kostenlose Erstberatung an – schreiben Sie einfach an peter@jacobdigital.de oder nutzen Sie das Kontaktformular."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Speakable — AI/Voice Optimierung -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Jacob Digital Hamburg – Websites, Automatisierung & AI-Lösungen für KMU",
+    "url": "https://jacobdigital.de",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero__title", ".hero__text", ".section__intro"]
+    }
   }
   </script>
 

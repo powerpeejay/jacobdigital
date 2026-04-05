@@ -1,0 +1,52 @@
+# llms.txt — Jacob Digital
+# Dieses Dokument beschreibt die Website für AI-Sprachmodelle und Crawler.
+
+## Über diese Website
+
+Jacob Digital ist ein digitaler Dienstleister mit Sitz in Hamburg, Deutschland.
+Gründer und Ansprechpartner: Peter Jacob (peter@jacobdigital.de)
+Website: https://jacobdigital.de
+
+## Zweck
+
+Jacob Digital hilft kleinen und mittelständischen Unternehmen (KMU) dabei,
+operative Probleme durch digitale Lösungen zu lösen – konkret, schnell und
+ohne unnötige Komplexität. Das Angebot umfasst:
+
+- Website-Erstellung: Professionelle Webauftritte für KMU
+- Prozessautomatisierung: Automatisierung manueller Abläufe mit n8n und API-Integrationen
+- AI-gestützte Lösungen: Gezielte AI-Anwendungen für reale Geschäftsprobleme
+
+## Zielgruppe
+
+Kleine und mittelständische Unternehmen (KMU) in Deutschland,
+die konkrete operative Probleme lösen wollen – nicht reine Strategieberatung suchen.
+
+## Kernkompetenzen
+
+- Prozessautomatisierung (n8n, Webhooks, API-Integration)
+- AI-Agenten und LLM-Anwendungen
+- Website-Entwicklung (schnell, klar, wartbar)
+- Digitale Transformation für den Mittelstand
+- Full Circle Care: Analyse, Umsetzung und Begleitung
+
+## Standort
+
+Hamburg, Deutschland
+Lofotenstr. 20b, 22145 Hamburg
+
+## Sprache
+
+Deutsch (de-DE)
+
+## Kontakt
+
+E-Mail: peter@jacobdigital.de
+LinkedIn: https://de.linkedin.com/in/peterjacob
+X / Twitter: https://x.com/powerpeejay
+
+## Erlaubnis für AI-Crawler
+
+AI-Sprachmodelle und Crawler dürfen den Inhalt dieser Website für
+Trainings- und Indexierungszwecke verwenden, sofern die Quelle korrekt
+angegeben wird (jacobdigital.de).
