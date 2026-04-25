@@ -83,6 +83,7 @@ a {
 
 .section {
   padding-block: 6rem;
+  scroll-margin-top: 80px;
 }
 
 .section--alt {
@@ -123,6 +124,7 @@ a {
   z-index: 100;
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--color-light);
 }
 
@@ -322,9 +324,33 @@ a {
   margin-bottom: 1.75rem;
 }
 
-.hero__title em {
-  font-style: normal;
-  color: var(--color-blue);
+.hero__title-line {
+  display: block;
+  color: var(--color-black);
+}
+
+/* Shiny gradient sweep — black base with brand-blue gleam (works on light bg) */
+@keyframes hero-shine {
+  0%   { background-position: 150% center; }
+  100% { background-position: -50% center; }
+}
+
+.hero__title-shine {
+  display: block;
+  background: linear-gradient(
+    100deg,
+    var(--color-black) 0%,
+    var(--color-black) 25%,
+    var(--color-blue) 40%,
+    var(--color-black) 55%,
+    var(--color-black) 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: hero-shine 3s linear infinite;
 }
 
 .hero__text {
