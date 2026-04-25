@@ -30,9 +30,11 @@ const MIME_TYPES = {
 const server = http.createServer((req, res) => {
   let urlPath = req.url.split('?')[0]; // strip query string
 
-  // Default to index.html
+  // Default to index.html for root and directory paths
   if (urlPath === '/' || urlPath === '') {
     urlPath = '/index.html';
+  } else if (urlPath.endsWith('/')) {
+    urlPath = urlPath + 'index.html';
   }
 
   const filePath = path.join(__dirname, urlPath);
