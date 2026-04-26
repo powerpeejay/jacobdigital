@@ -42,8 +42,11 @@ const server = http.createServer((req, res) => {
   fs.readFile(filePath, (err, data) => {
     if (err) {
       if (err.code === 'ENOENT') {
-        res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
-        res.end('<h1>404 – Not Found</h1><p>' + urlPath + '</p>');
+        const notFoundPath = path.join(__dirname, '404.html');
+        fs.readFile(notFoundPath, (e2, body) => {
+          res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+          res.end(e2 ? '<h1>404 – Not Found</h1><p>' + urlPath + '</p>' : body);
+        });
       } else {
         res.writeHead(500, { 'Content-Type': 'text/plain' });
         res.end('Server error');
