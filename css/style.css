@@ -337,6 +337,7 @@ a {
 
 .hero__title-shine {
   display: block;
+  padding-bottom: 0.12em;
   background: linear-gradient(
     100deg,
     var(--color-black) 0%,
