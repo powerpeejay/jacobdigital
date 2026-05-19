@@ -9,24 +9,28 @@ Website: https://jacobdigital.de
 
 ## Zweck
 
-Jacob Digital hilft kleinen und mittelständischen Unternehmen (KMU) dabei,
-operative Probleme durch digitale Lösungen zu lösen – konkret, schnell und
-ohne unnötige Komplexität. Das Angebot umfasst:
+Jacob Digital baut Websites für kleine und mittelständische Unternehmen (KMU)
+und unterstützt zusätzlich bei Prozessautomatisierung und AI-Lösungen –
+konkret, schnell und ohne unnötige Komplexität. Das Angebot umfasst:
 
-- Website-Erstellung: Professionelle Webauftritte für KMU
+- Website-Entwicklung: Klare, schnelle Websites für KMU – technisch sauber, SEO- und GEO-optimiert, kein generisches Template
+- Beratung & Analyse: Strukturierte Analyse mit priorisiertem Maßnahmenplan
 - Prozessautomatisierung: Automatisierung manueller Abläufe mit n8n und API-Integrationen
 - AI-gestützte Lösungen: Gezielte AI-Anwendungen für reale Geschäftsprobleme
+- AI Enablement: Praxisnaher Crashkurs für Teams
 
 ## Zielgruppe
 
 Kleine und mittelständische Unternehmen (KMU) in Deutschland,
-die konkrete operative Probleme lösen wollen – nicht reine Strategieberatung suchen.
+die eine professionelle Website brauchen oder konkrete operative Probleme
+lösen wollen – nicht reine Strategieberatung suchen.
 
 ## Kernkompetenzen
 
+- Website-Entwicklung (schnell, klar, wartbar, SEO-/GEO-optimiert)
+- Webdesign und Landing Pages für KMU
 - Prozessautomatisierung (n8n, Webhooks, API-Integration)
 - AI-Agenten und LLM-Anwendungen
-- Website-Entwicklung (schnell, klar, wartbar)
 - Digitale Transformation für den Mittelstand
 - Full Circle Care: Analyse, Umsetzung und Begleitung
 

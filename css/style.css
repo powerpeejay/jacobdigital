@@ -269,7 +269,7 @@ a {
 /* --- Hero --------------------------------------------------- */
 .hero {
   position: relative;
-  padding-block: 7rem 6rem;
+  padding-block: 3.5rem 3rem;
   overflow: hidden;
 }
 
@@ -417,6 +417,161 @@ a {
   outline-offset: 3px;
   border-radius: 2px;
   transform: none;
+}
+
+/* --- Hero Grid (2-Spalten) --------------------------------- */
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* H1 minimal kleiner in der schmaleren Spalte */
+.hero__grid .hero__title {
+  font-size: clamp(2rem, 4.2vw, 3.25rem);
+}
+
+.hero__title-accent {
+  display: block;
+  width: 64px;
+  height: 3px;
+  background: var(--color-blue);
+  border-radius: 2px;
+  margin: 0 0 1.75rem;
+}
+
+/* --- Hero Pillars (rechte Karte) --------------------------- */
+.hero__pillars {
+  background: var(--color-white);
+  border-radius: 14px;
+  padding: 0.5rem 2rem;
+  box-shadow:
+    0 1px 2px rgba(21, 134, 252, 0.06),
+    0 12px 32px rgba(10, 10, 10, 0.05),
+    0 32px 80px rgba(21, 134, 252, 0.07);
+}
+
+.hero__pillar {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.5rem 0;
+}
+
+.hero__pillar + .hero__pillar {
+  border-top: 1px solid rgba(99, 112, 128, 0.12);
+}
+
+.hero__pillar svg {
+  width: 44px;
+  height: 44px;
+  color: var(--color-blue);
+  flex-shrink: 0;
+}
+
+.hero__pillar-title {
+  font-family: var(--font-headline);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-black);
+  margin: 0 0 0.375rem;
+}
+
+.hero__pillar-text {
+  font-size: 0.9375rem;
+  color: var(--color-slate);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* --- Hero Trust-Band (V1) ---------------------------------- */
+.hero__trust {
+  margin-top: 3rem;
+  padding-top: 2.25rem;
+  border-top: 1px solid rgba(99, 112, 128, 0.14);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+}
+
+.hero__trust[hidden] {
+  display: none;
+}
+
+.hero__trust-item {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 0.875rem;
+  align-items: start;
+}
+
+.hero__trust-item svg {
+  width: 32px;
+  height: 32px;
+  color: var(--color-blue);
+  flex-shrink: 0;
+}
+
+.hero__trust-title {
+  font-family: var(--font-headline);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-black);
+  margin: 0 0 0.25rem;
+}
+
+.hero__trust-text {
+  font-size: 0.875rem;
+  color: var(--color-slate);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Hero-Inner-Max-Width Override im Grid */
+.hero__grid .hero__inner {
+  max-width: 600px;
+}
+
+/* Reduced-Motion: Shine + Button-Lift abschalten */
+@media (prefers-reduced-motion: reduce) {
+  .hero__title-shine {
+    animation: none;
+  }
+  .btn--primary:hover,
+  .btn--primary:focus-visible {
+    transform: none;
+  }
+}
+
+/* Shine-Sweep auf finalem Wort im H1 (z.B. "voranbringen.") */
+.hero__title-final {
+  display: inline-block;
+  padding-bottom: 0.12em;
+  background: linear-gradient(
+    100deg,
+    var(--color-black) 0%,
+    var(--color-black) 25%,
+    var(--color-blue) 40%,
+    var(--color-black) 55%,
+    var(--color-black) 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero-shine 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__title-final {
+    animation: none;
+    color: var(--color-blue);
+    -webkit-text-fill-color: var(--color-blue);
+  }
 }
 
 /* --- Leistungen --------------------------------------------- */
@@ -865,6 +1020,25 @@ a {
   .kontakt__inner {
     gap: 3rem;
   }
+
+  /* Hero: 2-Spalten → 1 Spalte */
+  .hero__grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .hero__grid .hero__inner {
+    max-width: 720px;
+  }
+
+  .hero__pillars {
+    max-width: 560px;
+  }
+
+  .hero__trust {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -926,6 +1100,18 @@ a {
   .hero__actions {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  /* Hero Trust: 2 → 1 Spalte */
+  .hero__trust {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    padding-top: 2.5rem;
+  }
+
+  .hero__pillars {
+    padding: 0.5rem 1.5rem;
   }
 }
 
