@@ -71,6 +71,9 @@
     const canvas = document.getElementById('hero-shader');
     if (!canvas) return;
 
+    /* WCAG 2.3.3: bei Reduced-Motion nur ein statisches Frame rendern */
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
     const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
     if (!gl) return; // silently degrade — CSS fallback still applies
 
@@ -232,6 +235,8 @@
       canvas.width  = hero ? hero.clientWidth  : window.innerWidth;
       canvas.height = hero ? hero.clientHeight : window.innerHeight;
       gl.viewport(0, 0, canvas.width, canvas.height);
+      /* Ohne Render-Loop leert das Setzen von width/height den Canvas */
+      if (reducedMotion.matches) drawFrame();
     }
     window.addEventListener('resize', resize);
     resize();
@@ -240,7 +245,7 @@
     const startTime = Date.now();
     let rafId;
 
-    function render() {
+    function drawFrame() {
       const t = (Date.now() - startTime) / 1000;
 
       gl.clearColor(0, 0, 0, 1);
@@ -255,16 +260,33 @@
       gl.enableVertexAttribArray(attribPos);
 
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    }
+
+    function render() {
+      drawFrame();
       rafId = requestAnimationFrame(render);
     }
 
-    render();
+    function start() {
+      if (reducedMotion.matches) {
+        drawFrame();
+      } else {
+        render();
+      }
+    }
+
+    start();
+
+    reducedMotion.addEventListener('change', function () {
+      cancelAnimationFrame(rafId);
+      start();
+    });
 
     /* Pause when tab is hidden to save battery */
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) {
         cancelAnimationFrame(rafId);
-      } else {
+      } else if (!reducedMotion.matches) {
         rafId = requestAnimationFrame(render);
       }
     });

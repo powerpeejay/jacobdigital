@@ -714,6 +714,8 @@
           <form class="form" action="https://formspree.io/f/mgoppydg" method="POST" id="kontakt-form">
             <input type="hidden" name="_language" value="de" />
             <input type="hidden" name="_subject" value="Neue Kontaktanfrage – Jacob Digital" />
+            <!-- Honeypot: für Menschen unsichtbar, Formspree verwirft Submissions mit ausgefülltem _gotcha -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
             <div class="form__group">
               <label class="form__label" for="name">Name</label>
               <input class="form__input" type="text" id="name" name="name" placeholder="Ihr Name" autocomplete="name" required />

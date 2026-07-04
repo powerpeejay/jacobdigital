@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /temporary screenshots/
 
 Sitemap: https://jacobdigital.de/sitemap.xml
